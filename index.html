@@ -7,5 +7,56 @@
   </head>
   <body>
     Hello World
+		
+		<form id="survey-form">
+			<label for="name" id="name-label">
+				Name
+				<input type="text" id="name" placeholder="Enter Your Name" required>
+			</label>
+			<label for="email" id="email-label">
+				Email
+				<input type="email" id="email" placeholder="Enter Your Email" required> 
+			</label>
+			<label for="number" id="number-label">
+				Age
+				<input type="number" id="number" placeholder="Age" min="18" max="45">
+			</label>
+			
+				<label for="dropdown" id="dropdown-label">
+					Which option best describes your current role?
+					<select id="dropdown">
+						<option>Test 1</option>
+						<option>Test 2</option>
+					</select>
+				</label>
+	
+				<label for="salary" id="salary-label"> how much is your salary per month?</label>
+	
+				<input type="radio" name="salary" value="1" checked /> Less 500K <br />
+				<input type="radio" name="salary" value="2" /> 500K - 1 M <br />
+				<input type="radio" name="salary" value="3" /> 1M - 1,5M <br />
+				<input type="radio" name="salary" value="4" /> 1,5M - 2M <br />
+			 
+	
+				<br /><br />
+				<label for="improve" id="improve-label"> Please choose your favorite album(s)? </label>
+	
+				<input type="checkbox" value="digital-skill" /> Digital Skill <br />
+				<input type="checkbox" value="enterpreneur-skill" /> Enterpreneur Skill <br />
+				<input type="checkbox" value="driver-skill" /> Driver Skill <br />
+				<input type="checkbox" value="other" /> Other <br />
+	
+				<br /><br />
+	
+				<label for="comments" id="comments-label">
+					Any comments or suggestions?
+					<textarea id="comments" cols="30" rows="10"></textarea>
+				</label>
+	
+				<button id="submit" type="submit">Submit</button>
+				
+	
+	
+		</form>
   </body>
 </html>
